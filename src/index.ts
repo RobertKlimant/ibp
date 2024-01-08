@@ -4,8 +4,6 @@ import { swipers } from '$utils/swipers';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  swipers();
-
   const instances: HTMLElement[] = queryElements('[nested-collection-element="target"]');
   if (!instances.length) return;
 
@@ -22,6 +20,8 @@ window.Webflow.push(() => {
     if (!collectionItemSlug || !collectionSlug || !className) return;
 
     loadElement(nestTarget, collectionSlug, collectionItemSlug, className);
+
+    swipers();
 
     // const promise = new Promise((resolve, reject) => {
     //   loadElement(nestTarget, collectionSlug, collectionItemSlug, className)
