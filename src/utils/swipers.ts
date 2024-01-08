@@ -10,6 +10,10 @@ export const swipers = () => {
       pauseOnMouseEnter: true,
     },
   };
+  const blog_testimonial_settings = {
+    spaceBetween: 24,
+    slidesPerView: 3,
+  };
 
   const swiper_gallery = document.querySelector('[swiper-option="gallery"]') as HTMLElement;
   new Swiper(swiper_gallery, gallery_settings);
@@ -18,17 +22,8 @@ export const swipers = () => {
   new Swiper(swiper_services, gallery_settings);
 
   const swiper_testimonial = document.querySelector('[swiper-option="testimonial"]') as HTMLElement;
-  new Swiper(swiper_testimonial, {
-    spaceBetween: 24,
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    slidesPerView: 3,
-    loop: true,
-  });
+  new Swiper(swiper_testimonial, blog_testimonial_settings);
 
   const swiper_blog = document.querySelector('[swiper-option="blog"]') as HTMLElement;
-  new Swiper(swiper_blog, {
-    spaceBetween: 24,
-    slidesPerView: 3.1,
-  });
+  new Swiper(swiper_blog, blog_testimonial_settings);
 };
