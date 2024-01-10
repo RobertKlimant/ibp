@@ -3,6 +3,8 @@ import 'swiper/css';
 import Swiper from 'swiper';
 
 export const swipers = () => {
+  console.log('ide');
+
   const gallery_settings = {
     slidesPerView: 1,
     autoplay: {
