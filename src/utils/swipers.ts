@@ -25,6 +25,27 @@ export const swipers = () => {
   const blog_testimonial_settings = {
     spaceBetween: 24,
     slidesPerView: 3,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.03,
+
+        spaceBetween: 12,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2.03,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 992px
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
   };
 
   const swipers: NodeListOf<HTMLElement> = document.querySelectorAll('.swiper');
