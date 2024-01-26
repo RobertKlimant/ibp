@@ -1,5 +1,6 @@
 import { home } from '$utils/home';
 import { navbar } from '$utils/nav';
+import { sverige } from '$utils/sverige';
 import { nestedElement } from '$utils/nestElement';
 import { swipers } from '$utils/swipers';
 
@@ -12,4 +13,5 @@ window.Webflow.push(() => {
   modal();
   navbar();
   home();
+  sverige();
 });
