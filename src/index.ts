@@ -6,6 +6,8 @@ import { swipers } from '$utils/swipers';
 
 import { modal } from './modal/modal';
 
+import { easter } from '$utils/easter';
+
 window.Webflow ||= [];
 window.Webflow.push(() => {
   swipers();
@@ -14,4 +16,5 @@ window.Webflow.push(() => {
   navbar();
   home();
   sverige();
+  easter();
 });
