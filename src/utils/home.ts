@@ -32,6 +32,10 @@ export const home = () => {
         email_el.innerText = 'info@rpbemanning.se';
         tel_el.innerText = '08-518 072 00';
         break;
+      case 'events':
+        email_el.innerText = 'event@intebarapost.se';
+        tel_el.innerText = '08-505 255 00';
+        break;
       default:
         break;
     }
