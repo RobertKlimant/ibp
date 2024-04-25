@@ -16,5 +16,5 @@ window.Webflow.push(() => {
   navbar();
   home();
   sverige();
-  easter();
+  // easter();
 });
